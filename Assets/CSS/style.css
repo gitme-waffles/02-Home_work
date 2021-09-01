@@ -82,3 +82,31 @@ body {
     background-color: var(--background-color);
 
 }
+
+/*** Media Queries ***/
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+    header h1 {
+        text-align: center;
+
+    }
+
+    nav {
+
+    }
+
+    nav ul  {
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+}
