@@ -1,0 +1,84 @@
+
+/* 
+*** Contents *** 
+* Globals
+* Header
+* 
+* Media Queries
+*/
+
+/*** Globals ***/
+:root {
+    --background-color: #223;
+    --color: #999;
+    --header-color: #113;
+    --nav-color: #112;
+}
+
+* {
+    color: var(--color);
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*** Fonts ***/
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+/* h3, */
+
+a {
+    font-size: 150%;
+}
+
+/*** Header ***/
+
+header {
+    display: block;
+    background-color: var(--header-color);
+    padding: 60px;
+    margin: 0;
+}
+
+/*** Nav ***/
+
+nav {
+    background-color: var(--nav-color);
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: var(--nav-color);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+a {
+    
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    
+}
+
+nav ul a:hover{
+    background-color: var(--background-color);
+}
+
+body {
+    background-color: var(--background-color);
+
+}
