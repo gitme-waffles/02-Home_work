@@ -2,7 +2,10 @@
 /* 
 *** Contents *** 
 * Globals
+* Fonts
 * Header
+* Nav
+* Body
 * 
 * Media Queries
 */
@@ -32,13 +35,19 @@ h2 {
     font-size: 200%;
 }
 
-/* h3, */
+h3 {
+    font-size: 350%;
+    display: block;
+    padding: 30px;
+}
 
-a {
+nav a {
     font-size: 150%;
 }
 
+
 /*** Header ***/
+
 
 header {
     display: block;
@@ -47,11 +56,12 @@ header {
     margin: 0;
 }
 
+
 /*** Nav ***/
+
 
 nav {
     background-color: var(--nav-color);
-
 }
 
 nav ul {
@@ -66,8 +76,7 @@ nav ul li {
     padding: 20px 0px;
 }
 
-a {
-    
+nav a {
     text-decoration: none;
     list-style: none;
     padding: 20px;
@@ -78,43 +87,75 @@ nav ul a:hover{
     background-color: var(--background-color);
 }
 
+
+/*** Body ***/
+
+
 body {
     background-color: var(--background-color);
-
 }
 
-article figure {
+/* indents 'about me' text */
+h3 + p {
+    padding: 0 75px;
+}
+
+.flexWrapper {
     display: flex;
     justify-content: center;
+    gap: 5%;
+    padding: 0 10% 4% 10%;
 }
-img {
-    /* max-height: 500px; */
+.app-card {
+    bottom: 1px;
+    background-color: var(--header-color);
+    text-decoration: none;
+    border: 2px solid var(--header-color);
+    border-radius: 4px;
+}
 
+.image-link {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+}
+
+.image-link:hover img {
+    opacity: .6;
+}
+
+/* Makes the image fit it's container */
+.big-pic {
+    width: 100%;
+    border-radius: 2px;
 
 }
-#img-horiseon {
 
+.link-title {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    max-width: 120px;
+    border-radius: 2px;
+    padding: 3%;
+    background-color: var(--header-color);
 }
+
 
 /*** Media Queries ***/
 
-@media screen and (max-width: 992px) {
 
+@media screen and (min-width: 992px) {
 }
 
 @media screen and (max-width: 768px) {
-
 }
 
 @media screen and (max-width: 576px) {
-
-    header h1 {
+    header h1, 
+    h3, 
+    p {
         text-align: center;
-
-    }
-
-    nav {
-
     }
 
     nav ul  {
@@ -122,4 +163,8 @@ img {
         text-align: center;
     }
 
+    .link-title {
+        font-size: 120%;
+        max-width: 100%;
+    }
 }
