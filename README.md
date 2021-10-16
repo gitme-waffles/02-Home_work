@@ -2,7 +2,7 @@
 
 
 This application is a mock portfolio with 3 images that when clicked
-take you to a deployed [website](https://gitme-waffles.github.io/01-Home_work/) (from the previous project).
+take you to a deployed [website](https://gitme-waffles.github.io/02-Hw_mockPortfolio) (from the previous project).
 
 The nav bar has 3 buttons that when clicked take you to the corrosponding section within the page.
 
